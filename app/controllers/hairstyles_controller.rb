@@ -1,0 +1,6 @@
+class HairstylesController < ApplicationController
+
+
+
+	
+end
