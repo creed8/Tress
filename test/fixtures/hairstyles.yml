@@ -2,10 +2,12 @@
 
 one:
   name: MyString
-  price: 1
+  price: MyString
   hair_type: MyString
+  image: MyString
 
 two:
   name: MyString
-  price: 1
+  price: MyString
   hair_type: MyString
+  image: MyString

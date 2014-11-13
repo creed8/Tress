@@ -1,0 +1,27 @@
+<h1> New Hairstyle </h1>
+
+<%= form_for :hairstyle, url: hairstyles_path, :html => {:multipart => true} do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </p>
+
+  <p>
+    <%= f.label :hair_type %><br>
+    <%= f.text_field :hair_type %>
+  </p>  
+ 
+  <p>
+    <%= f.file_field :image %>
+  </p>  
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
