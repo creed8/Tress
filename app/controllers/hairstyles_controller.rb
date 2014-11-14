@@ -7,7 +7,6 @@ class HairstylesController < ApplicationController
 	def create
 	  @hairstyle = Hairstyle.new(hairstyle_params)
 
-	  binding.pry
 	  @hairstyle.save
 
 	  redirect_to @hairstyle
@@ -19,7 +18,7 @@ class HairstylesController < ApplicationController
 
 	private
 	def hairstyle_params
-	  params.require(:hairstyle).permit(:name, :price, :hair_type, :images)
+	  params.require(:hairstyle).permit(:name, :price, :hair_type)
 	end
 
 

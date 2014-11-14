@@ -128,7 +128,7 @@ PLATFORMS
 DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
-  paperclip
+  paperclip (~> 4.2.0)
   pry
   pry-rails
   rails (= 4.1.7)
