@@ -1,13 +1,17 @@
-<h1>Listing Hairstyles</h1>
+<div class="row">
+  <% @hairstyles.each do |hairstyle| %>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+      <%= link_to (image_tag hairstyle.image.url(:medium), class: 'image'), hairstyle %>
+      
+      </div>
+    </div>
+  <% end %>
+</div>
  
 
-  <% @hairstyles.each do |hairstyle| %>
+  
     
-      <p><%= image_tag hairstyle.image.url(:medium) %></p>
-      <p><%= hairstyle.name %></p>
-      <p><%= hairstyle.price %></p>
-      <p><%= hairstyle.hair_type %></p>
-      <p><%= link_to 'Destroy', hairstyle_path(hairstyle),
-                    method: :delete, data: { confirm: 'Are you sure?' } %></p>
+     
     
-  <% end %>
+  

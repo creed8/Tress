@@ -29,6 +29,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'paperclip', '~> 4.2.0'
 gem 'bootstrap-sass', '~> 3.3.1.0'
+gem 'autoprefixer-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
